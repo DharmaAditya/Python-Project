@@ -102,7 +102,7 @@ def total_value_ui():
 def export_to_excel_ui():
     filename = input("Masukkan nama file output (kosongkan untuk nama default): ") or None
     try:
-        output_file = Inventory.export_to_excel(filename)
+        output_file = Inventory.export_to_excel_pretty(filename)
         print(f"Data berhasil diexport ke file: {output_file}")
     except Exception as e:
         print(f"Error saat mengekspor data: {e}")
